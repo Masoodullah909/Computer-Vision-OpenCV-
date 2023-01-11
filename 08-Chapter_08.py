@@ -7,7 +7,7 @@ cap = cv.VideoCapture('resources/video.mp4')
 # Writing format, codec, video object and file output
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
-out = cv.VideoWriter("resources/Gray_video.avi", cv.VideoWriter_fourcc('M', 'j', 'p', 'G'), 10, (frame_width, frame_height))
+out = cv.VideoWriter("resources/Gray_video.avi", cv.VideoWriter_fourcc('M', 'j', 'p', 'G'), 10, (frame_width, frame_height), isColor=False)
 
 
 while (True):
@@ -24,5 +24,7 @@ while (True):
     else:
         break
 
+
 cap.release()
+out.release()
 cv.destroyAllWindows() 
