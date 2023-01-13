@@ -12,7 +12,7 @@ import numpy as np
 def slider():
     pass
 
-path = 'resources/img.jpg'
+path = 'resources/perspective.jpg'
 
 cv.namedWindow('Bars')
 cv.resizeWindow('Bars', 540, 340)

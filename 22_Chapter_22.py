@@ -9,11 +9,11 @@ face_cascade = cv.CascadeClassifier('resources/haarcascade_frontalface_default.x
 
 
 # Reading the image
-img = cv.imread('resources/masood.jpg')
+img = cv.imread('resources/faces.jpeg')
 # print(img.shape)
 
 # Resizing the image
-img = cv.resize(img, (480, 640))
+# img = cv.resize(img, (480, 640))
 # print(img.shape)
 
 gray_img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
