@@ -22,7 +22,7 @@ def paste_center(x, y, w, h):
     cy = y + y1
     return cx,cy
 
-cap = cv2.VideoCapture('resources/vehicles.mp4')
+cap = cv2.VideoCapture('resources/cars1.mp4')
 subtractor = cv2.bgsegm.createBackgroundSubtractorMOG()
 
 while True:

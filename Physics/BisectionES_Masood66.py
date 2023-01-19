@@ -20,6 +20,8 @@ def bisection_masood66(f,a,b,es):
         c_old=c
     return(itr-1,c,error)
 
+f=lambda x: np.log(x**4)-0.7
+bisection_masood66(f, 0.5, 2, 0.1)
 
 """ OUTPUT OF BISECTION
 
